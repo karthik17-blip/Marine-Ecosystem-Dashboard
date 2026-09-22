@@ -1,0 +1,25 @@
+{
+  "phase": "16J",
+  "status": "completed",
+  "dashboard": "/content/drive/MyDrive/Marine_Ecosystem_Project/streamlit_app/app.py",
+  "backup": "/content/drive/MyDrive/Marine_Ecosystem_Project/streamlit_app/app.py.phase16j_backup",
+  "integrated_components": [
+    "Phase 16C ML suitability models",
+    "Random Forest",
+    "XGBoost",
+    "LightGBM",
+    "Phase 16G geographic predictions",
+    "Phase 16G interactive geographic map",
+    "Phase 16H batch analytics",
+    "Year-wise suitability",
+    "Depth-wise suitability",
+    "Phase 16I MEHI integration",
+    "ML suitability vs MEHI correlation",
+    "Download center",
+    "Phase 16 methodology"
+  ],
+  "mehi_matched_region_years": 313,
+  "mehi_pearson_correlation": 0.783991,
+  "mean_ml_suitability": 69.951595,
+  "mean_mehi": 80.249177
+}

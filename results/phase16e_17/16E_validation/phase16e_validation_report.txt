@@ -1,0 +1,35 @@
+
+PHASE 16E — PROFILE-BASED VALIDATION
+=====================================
+
+Models:
+- Random Forest
+- XGBoost
+- LightGBM
+
+Validation strategy:
+Profile-based train/test separation.
+
+The suitability classification is project-defined:
+0 = Not Suitable
+1 = Moderate
+2 = Suitable
+
+Validation metrics
+------------------
+
+        model  accuracy  precision   recall       f1  roc_auc
+Random Forest  0.999110   0.999110 0.999110 0.999110 0.999997
+      XGBoost  0.996908   0.996908 0.996908 0.996907 0.999963
+     LightGBM  0.995662   0.995661 0.995662 0.995661 0.999903
+
+Scientific note
+---------------
+
+The suitability target is derived from environmental anomaly
+thresholds. Therefore very high predictive performance is expected
+because the model learns relationships related to the target
+construction.
+
+The results should not be interpreted as independent biological
+validation.

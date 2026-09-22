@@ -1,0 +1,15 @@
+depth_zone,predicted_suitability,observations,total_observations,percentage
+Surface,Moderate,56,78,71.7948717948718
+Surface,Suitable,22,78,28.205128205128204
+Upper Ocean,Moderate,942,1471,64.03806934058464
+Upper Ocean,Not Suitable,45,1471,3.059143439836846
+Upper Ocean,Suitable,484,1471,32.902787219578514
+Intermediate,Moderate,4131,5944,69.4986541049798
+Intermediate,Not Suitable,71,5944,1.1944818304172276
+Intermediate,Suitable,1742,5944,29.306864064602962
+Deep,Moderate,8434,17550,48.05698005698006
+Deep,Not Suitable,232,17550,1.3219373219373218
+Deep,Suitable,8884,17550,50.62108262108262
+Very Deep,Moderate,2172,4911,44.22724496029322
+Very Deep,Not Suitable,66,4911,1.3439218081857056
+Very Deep,Suitable,2673,4911,54.42883323152108

@@ -1,0 +1,8 @@
+{
+    "observations": 29954,
+    "not_suitable": 414,
+    "moderate": 15735,
+    "suitable": 13805,
+    "mean_confidence": 0.991,
+    "mean_suitability_score": 72.35
+}

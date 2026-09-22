@@ -1,0 +1,139 @@
+{
+    "phase": "Phase 16C",
+    "models": [
+        "Random Forest",
+        "XGBoost",
+        "LightGBM"
+    ],
+    "selected_model": "Random Forest",
+    "features": [
+        "latitude",
+        "longitude",
+        "depth_m",
+        "ctd_temperature",
+        "ctd_salinity",
+        "ctd_oxygen",
+        "year",
+        "month",
+        "day_of_year"
+    ],
+    "classes": {
+        "0": "Not Suitable",
+        "1": "Moderate",
+        "2": "Suitable"
+    },
+    "label_definition": {
+        "Not Suitable": "Maximum absolute standardized environmental anomaly >= 3",
+        "Moderate": "Maximum absolute standardized environmental anomaly >= 1 and < 3",
+        "Suitable": "Maximum absolute standardized environmental anomaly < 1"
+    },
+    "excluded_features": [
+        "temperature_anomaly",
+        "salinity_anomaly",
+        "oxygen_anomaly",
+        "temperature_gradient",
+        "salinity_gradient",
+        "oxygen_gradient",
+        "MEHI",
+        "health_category",
+        "ML_cluster"
+    ],
+    "training_rows": 179797,
+    "testing_rows": 44950,
+    "sample_rows": 224747,
+    "historical_ranges": {
+        "latitude": {
+            "min": -67.1141,
+            "max": 63.3007,
+            "p05": -62.7825,
+            "p95": 46.9912,
+            "median": 25.21614
+        },
+        "longitude": {
+            "min": -179.9448,
+            "max": 179.9061,
+            "p05": -147.5198,
+            "p95": 171.904,
+            "median": 10.245
+        },
+        "depth_m": {
+            "min": 0.0,
+            "max": 6852.0,
+            "p05": 173.0,
+            "p95": 4779.0,
+            "median": 1852.0
+        },
+        "ctd_temperature": {
+            "min": -2.0388,
+            "max": 30.6348,
+            "p05": -0.1266,
+            "p95": 14.4841,
+            "median": 3.071850191137144
+        },
+        "ctd_salinity": {
+            "min": 15.339195450331514,
+            "max": 40.678,
+            "p05": 34.3421,
+            "p95": 38.6368,
+            "median": 34.72592716732384
+        },
+        "ctd_oxygen": {
+            "min": 0.3988582323867774,
+            "max": 506.80888016685725,
+            "p05": 52.003343964096835,
+            "p95": 256.4,
+            "median": 181.985
+        },
+        "year": {
+            "min": 2020.0,
+            "max": 2025.0,
+            "p05": 2020.0,
+            "p95": 2025.0,
+            "median": 2022.0
+        },
+        "month": {
+            "min": 1.0,
+            "max": 12.0,
+            "p05": 1.0,
+            "p95": 10.0,
+            "median": 5.0
+        },
+        "day_of_year": {
+            "min": 1.0,
+            "max": 365.0,
+            "p05": 13.0,
+            "p95": 282.0,
+            "median": 121.0
+        }
+    },
+    "model_comparison": [
+        {
+            "model": "Random Forest",
+            "accuracy": 0.9991101223581758,
+            "precision": 0.9991102094072045,
+            "recall": 0.9991101223581758,
+            "f1_score": 0.9991100567391257,
+            "roc_auc": 0.9999971693178973,
+            "training_time_seconds": 81.24400305747986
+        },
+        {
+            "model": "XGBoost",
+            "accuracy": 0.9969076751946607,
+            "precision": 0.9969080184242628,
+            "recall": 0.9969076751946607,
+            "f1_score": 0.9969065047186335,
+            "roc_auc": 0.9999629743557408,
+            "training_time_seconds": 24.840784072875977
+        },
+        {
+            "model": "LightGBM",
+            "accuracy": 0.9956618464961068,
+            "precision": 0.9956603678094837,
+            "recall": 0.9956618464961068,
+            "f1_score": 0.9956609820959164,
+            "roc_auc": 0.999903446593931,
+            "training_time_seconds": 15.12339997291565
+        }
+    ],
+    "note": "This is a project-defined analytical environmental suitability classifier. It is not biological ground truth."
+}

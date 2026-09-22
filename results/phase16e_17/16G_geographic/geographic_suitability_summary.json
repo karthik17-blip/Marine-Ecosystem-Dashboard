@@ -1,0 +1,26 @@
+{
+  "total_observations": 29954,
+  "latitude_min": -67.1141,
+  "latitude_max": 63.3007,
+  "longitude_min": -179.9448,
+  "longitude_max": 179.9061,
+  "mean_confidence": 0.9910130895648804,
+  "mean_suitability_score": 72.35260733124123,
+  "distribution": [
+    {
+      "suitability": "Moderate",
+      "observations": 15735,
+      "percentage": 52.530546838485684
+    },
+    {
+      "suitability": "Suitable",
+      "observations": 13805,
+      "percentage": 46.0873339119984
+    },
+    {
+      "suitability": "Not Suitable",
+      "observations": 414,
+      "percentage": 1.3821192495159245
+    }
+  ]
+}

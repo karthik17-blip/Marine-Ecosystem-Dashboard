@@ -1,0 +1,12 @@
+{
+    "ml_observations": 29954,
+    "mehi_records": 328,
+    "ml_region_year_groups": 313,
+    "mehi_region_year_groups": 328,
+    "matched_region_year_groups": 313,
+    "pearson_correlation": 0.783991,
+    "mean_ml_suitability_score": 69.951595,
+    "mean_mehi": 80.249177,
+    "min_ml_score": 0.724638,
+    "max_ml_score": 100.0
+}

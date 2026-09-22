@@ -1,0 +1,14 @@
+PHASE 16E — PROFILE BASED VALIDATION
+
+Total HDFS rows: 5,898,883
+Validation sample: 224,689
+Training rows: 180,660
+Testing rows: 44,029
+Training profiles: 1,800
+Testing profiles: 451
+Profile overlap: 0
+
+        model  accuracy  precision   recall  f1_score  roc_auc  training_time_seconds
+Random Forest  0.998887   0.998888 0.998887  0.998887 0.999995              63.154260
+      XGBoost  0.994708   0.994709 0.994708  0.994708 0.999932              20.170535
+     LightGBM  0.994504   0.994510 0.994504  0.994505 0.999897              12.439890
