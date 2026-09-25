@@ -1,0 +1,24 @@
+cluster,depth_zone,count
+0,Deep,33950
+0,Intermediate,12281
+0,Very Deep,5480
+0,Upper Ocean,3632
+0,Surface,121
+1,Deep,33606
+1,Very Deep,19069
+1,Intermediate,149
+1,Upper Ocean,9
+1,Surface,2
+2,Deep,21238
+2,Intermediate,16231
+2,Upper Ocean,869
+2,Surface,42
+3,Deep,26316
+3,Very Deep,8393
+3,Intermediate,3295
+3,Upper Ocean,321
+3,Surface,17
+4,Intermediate,7504
+4,Upper Ocean,5219
+4,Deep,1924
+4,Surface,226
