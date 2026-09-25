@@ -3394,6 +3394,29 @@ def load_phase16_csv(filename, folder):
     return pd.DataFrame()
 
 
+
+# ---------------------------------------------------------------------
+# SUITABILITY PREDICTOR CONSTANTS
+# ---------------------------------------------------------------------
+
+FEATURE_COLUMNS = [
+    "latitude",
+    "longitude",
+    "depth_m",
+    "ctd_temperature",
+    "ctd_salinity",
+    "ctd_oxygen",
+    "year",
+    "month",
+    "day_of_year"
+]
+
+CLASS_NAMES = {
+    0: "Not Suitable",
+    1: "Moderate",
+    2: "Suitable"
+}
+
 def render_suitability_predictor():
 
     st.title(
@@ -3408,6 +3431,15 @@ def render_suitability_predictor():
     )
 
     models_local = load_suitability_models()
+
+    # Load Phase 16C metadata so the predictor uses the
+    # exact feature order used during model training.
+    metadata = load_suitability_metadata()
+
+    if metadata.get("features"):
+        predictor_features = metadata["features"]
+    else:
+        predictor_features = FEATURE_COLUMNS
 
     if not models_local:
 
@@ -3494,7 +3526,7 @@ def render_suitability_predictor():
             month,
             day_of_year
         ]],
-        columns=FEATURE_COLUMNS
+        columns=predictor_features
     )
 
     if st.button(
