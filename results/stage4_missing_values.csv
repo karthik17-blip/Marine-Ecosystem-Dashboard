@@ -1,0 +1,2 @@
+profile_id,time,latitude,longitude,pressure,ctd_temperature,ctd_temperature_qc,ctd_salinity,ctd_salinity_qc,ctd_oxygen,ctd_oxygen_qc,timestamp
+0,0,0,0,0,2,208212,73,208284,163081,208306,0

@@ -1,0 +1,8 @@
+check,invalid_rows
+latitude_invalid,0
+longitude_invalid,0
+pressure_invalid,0
+temperature_invalid,0
+salinity_invalid,0
+oxygen_invalid,0
+timestamp_invalid,0

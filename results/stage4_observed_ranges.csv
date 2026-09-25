@@ -1,0 +1,2 @@
+min_timestamp,max_timestamp,min_latitude,max_latitude,min_longitude,max_longitude,min_pressure,max_pressure,min_temperature,max_temperature,min_salinity,max_salinity,min_oxygen,max_oxygen
+2020-01-01 05:01:00,2025-05-02 16:41:00,-67.1141,63.3007,-179.9448,179.9061,0.0,6905.0,-2.0559,31.0224,15.339195450331514,40.678,0.3988582323867774,506.80888016685725
